@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surprise Semangat Kerja</title>
+<style>
+body {
+  margin:0;
+  background:linear-gradient(135deg,#061b33,#087f5b);
+  color:white;
+  font-family:Arial;
+  text-align:center;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.card {
+  padding:30px;
+  margin:20px;
+  max-width:420px;
+  background:#ffffff18;
+  border:1px solid #ffffff50;
+  border-radius:25px;
+  box-shadow:0 0 30px #00ff9970;
+}
+h1 {color:#ffe66d;}
+.heart {
+  font-size:65px;
+  animation:beat 1s infinite;
+}
+@keyframes beat {
+  50% {transform:scale(1.3);}
+}
+button {
+  background:#25D366;
+  color:white;
+  border:0;
+  padding:15px 25px;
+  border-radius:30px;
+  font-size:17px;
+  cursor:pointer;
+}
+#pesan {display:none;line-height:1.8;}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="heart">🎁</div>
+  <h1>ADA SURPRISE UNTUKMU!</h1>
+  <p>Seseorang mengirimkan pesan spesial untukmu ❤️</p>
+
+  <button onclick="buka()">BUKA SURPRISE ✨</button>
+
+  <div id="pesan">
+    <h1>SEMANGAT KERJA! 💪</h1>
+    <div class="heart">❤️</div>
+
+    <h2>KAMU ORANG HEBAT!</h2>
+
+    <p>
+      Jangan pernah menyerah dengan keadaan.<br>
+      Tetap kuat menghadapi setiap tantangan.<br>
+      Jangan takut lelah dalam berjuang.
+    </p>
+
+    <p>
+      Ingatlah, setiap kerja keras hari ini
+      adalah jalan menuju kesuksesan esok hari.
+    </p>
+
+    <h2>🔥 KAMU PASTI BISA! 🔥</h2>
+
+    <p>
+      Semoga pekerjaanmu lancar,<br>
+      rezekimu semakin luas,<br>
+      dan selalu diberikan kesehatan.
+    </p>
+
+    <h2>❤️ SALAM SEMANGAT! ❤️</h2>
+  </div>
+</div>
+
+<script>
+function buka() {
+  document.getElementById("pesan").style.display="block";
+  document.querySelector("button").style.display="none";
+  document.querySelector(".card").style.animation="beat 1s";
+}
+</script>
+
+</body>
+</html>
+
